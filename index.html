@@ -12,6 +12,19 @@
     </script>
 
     <script src="romans.js"></script>
+    convertButton.addEventListener('click', function() {
+    var inputValue = inputArea.value;
+    var convertion = modeCheckbox.checked ? convertIntegerToRoman(inputValue) : convertRomanToInteger(inputValue);
+    if (convertion.result) {
+      outputArea.innerHTML = convertion.value;
+    } else {
+      alert(convertion.message);
+    }
+    
+    gtag('event','romanConversion'. {
+      'result: convertion.value'
+    })
+  });
     <link rel="stylesheet" href="romans.css">
   </head>
   <body onload="init()">

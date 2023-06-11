@@ -27,7 +27,7 @@ function init() {
   // 2 - Write the UI output (outputArea.innerHTML)
   // 3 - Show error messages
   // This is cleaner and also removes code duplications
-  convertButton.addEventListener('click', function() {
+  convertButton.addEventListener('click', function() { // eslint-disable-line no-unused-vars
     var inputValue = inputArea.value;
     var convertion = modeCheckbox.checked ? convertIntegerToRoman(inputValue) : convertRomanToInteger(inputValue);
     if (convertion.result) {
@@ -37,7 +37,7 @@ function init() {
     }
     
     // eslint-disable-next-line no-undef
-    gtag('event','romanConversion'. {
+    gtag('event','romanConversion', {
       'result: convertion.value'
     })
   });

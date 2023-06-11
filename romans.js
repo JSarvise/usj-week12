@@ -4,7 +4,7 @@ const INVALID_INTEGER = 'Please enter a valid integer';
 const OUT_OF_RANGE = 'Out of range (1-3999)';
 
 function init() { 
-
+  
   // Load elements once to avoid repetition on every invocation
   var modeCheckbox = document.querySelector('input[type=\'checkbox\']');
   var header = document.querySelector('h1');
@@ -35,11 +35,10 @@ function init() {
     } else {
       alert(convertion.message);
     }
-    
     // eslint-disable-next-line no-undef
-    gtag('event','romanConversion', {
-      'result: convertion.value'
-    })
+    gtag('event', 'getResult', {
+      'ResultValue': convertion.value
+    });
   });
 
 }

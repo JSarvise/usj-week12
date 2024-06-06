@@ -1,0 +1,1 @@
+Implementación de un flujo de trabajo con GitHub, configuración de ESLint para asegurar la calidad del código, desarrollo de funcionalidades y pruebas para garantizar el correcto funcionamiento de la aplicación web.
